@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>com.flying.parent</groupId>
+        <artifactId>flying-spring-cloud-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.flying.activity</groupId>
+    <artifactId>flying-activity</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <description>用户模块</description>
+
+    <properties>
+        <hutool-all.version>5.3.2</hutool-all.version>
+        <flying-common.version>1.0.0-SNAPSHOT</flying-common.version>
+    </properties>
+
+    <modules>
+        <module>flying-activity-api</module>
+        <module>flying-activity-web</module>
+        <module>flying-activity-service</module>
+        <module>flying-activity-test</module>
+        <module>flying-activity-dao</module>
+        <module>flying-activity-common</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool-all.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.flying.common</groupId>
+                <artifactId>flying-common</artifactId>
+                <version>${flying-common.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

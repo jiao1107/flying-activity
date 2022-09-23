@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="flying-activity-test" />
+        <module name="flying-activity-web" />
+        <module name="flying-activity-api" />
+        <module name="flying-activity-service" />
+        <module name="flying-activity-common" />
+        <module name="flying-activity-dao" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="flying-activity" target="1.8" />
+      <module name="flying-activity-api" target="1.8" />
+      <module name="flying-activity-common" target="1.8" />
+      <module name="flying-activity-dao" target="1.8" />
+      <module name="flying-activity-service" target="1.8" />
+      <module name="flying-activity-test" target="1.8" />
+      <module name="flying-activity-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="flying-activity-api" options="-parameters" />
+      <module name="flying-activity-common" options="-parameters" />
+      <module name="flying-activity-dao" options="-parameters" />
+      <module name="flying-activity-service" options="-parameters" />
+      <module name="flying-activity-test" options="-parameters" />
+      <module name="flying-activity-web" options="-parameters" />
+    </option>
+  </component>
+</project>

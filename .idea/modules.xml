@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/flying-activity.iml" filepath="$PROJECT_DIR$/flying-activity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flying-activity-api/flying-activity-api.iml" filepath="$PROJECT_DIR$/flying-activity-api/flying-activity-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flying-activity-common/flying-activity-common.iml" filepath="$PROJECT_DIR$/flying-activity-common/flying-activity-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flying-activity-dao/flying-activity-dao.iml" filepath="$PROJECT_DIR$/flying-activity-dao/flying-activity-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flying-activity-service/flying-activity-service.iml" filepath="$PROJECT_DIR$/flying-activity-service/flying-activity-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flying-activity-test/flying-activity-test.iml" filepath="$PROJECT_DIR$/flying-activity-test/flying-activity-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flying-activity-web/flying-activity-web.iml" filepath="$PROJECT_DIR$/flying-activity-web/flying-activity-web.iml" />
+    </modules>
+  </component>
+</project>
