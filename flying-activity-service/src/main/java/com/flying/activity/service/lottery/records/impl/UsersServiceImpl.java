@@ -1,8 +1,8 @@
-package com.flying.activity.service.users.impl;
+package com.flying.activity.service.lottery.records.impl;
 
-import com.flying.activity.service.users.UserBO;
-import com.flying.activity.service.users.UserRegisterEvent;
-import com.flying.activity.service.users.UsersService;
+import com.flying.activity.service.lottery.records.UserBO;
+import com.flying.activity.service.lottery.records.UserRegisterEvent;
+import com.flying.activity.service.lottery.records.UsersService;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.stereotype.Service;

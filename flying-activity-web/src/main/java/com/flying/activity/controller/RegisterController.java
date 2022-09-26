@@ -2,16 +2,16 @@ package com.flying.activity.controller;
 
 import cn.hutool.core.bean.BeanUtil;
 import com.flying.common.constants.DataResult;
-import com.flying.activity.common.enums.VerifyType;
+import com.flying.activity.common.enums.Rarity;
 import com.flying.activity.common.utils.KeyHelper;
 import com.flying.activity.dto.PwdChangeReq;
 import com.flying.activity.dto.PwdRetrieveReq;
 import com.flying.activity.dto.RegisterReq;
 import com.flying.activity.dto.VerificationCodeReq;
-import com.flying.activity.service.accounts.AccountBO;
-import com.flying.activity.service.accounts.AccountsService;
+import com.flying.activity.service.activity.ActivityBO;
+import com.flying.activity.service.activity.ActivityService;
 import com.flying.activity.service.integration.VerificationCodeService;
-import com.flying.activity.service.pwd.PwdService;
+import com.flying.activity.service.activity.rules.ActivityRuleService;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import org.apache.commons.lang3.StringUtils;
@@ -38,9 +38,9 @@ public class RegisterController {
     private Cache<String, String> verifyCodeCache = CacheBuilder.newBuilder().build();
 
     @Resource
-    private AccountsService accountsService;
+    private ActivityService accountsService;
     @Resource
-    private PwdService pwdService;
+    private ActivityRuleService pwdService;
     @Resource
     private VerificationCodeService verificationCodeService;
 
@@ -58,7 +58,7 @@ public class RegisterController {
         this.registerPreCheck(register);
         this.verifyCode(register);
 
-        accountsService.register(BeanUtil.copyProperties(register, AccountBO.class));
+        accountsService.register(BeanUtil.copyProperties(register, ActivityBO.class));
         return DataResult.success();
     }
 
@@ -112,7 +112,7 @@ public class RegisterController {
     private void verifyCode(RegisterReq registerReq) {
         // 校验验证码
         if (StringUtils.isNotBlank(registerReq.getVerificationCode())) {
-            String key = KeyHelper.assembleKey(VerifyType.register.name(), registerReq.getAccount());
+            String key = KeyHelper.assembleKey(Rarity.register.name(), registerReq.getAccount());
             String verifyCode = verifyCodeCache.getIfPresent(key);
             if (verifyCode == null) {
                 throw new RuntimeException("");

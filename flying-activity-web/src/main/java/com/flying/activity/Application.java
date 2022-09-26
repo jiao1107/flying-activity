@@ -22,7 +22,7 @@ public class Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
-        LOGGER.info("----------------------------------->>>> flying users start success!");
+        LOGGER.info("----------------------------------->>>> flying activity start success!");
     }
 
 }

@@ -1,6 +1,6 @@
 package com.flying.activity.common.utils;
 
-import com.flying.activity.common.constants.UsersConstants;
+import com.flying.activity.common.constants.ActivityConstants;
 import org.springframework.util.Assert;
 
 /**
@@ -18,7 +18,7 @@ public class KeyHelper {
 
 
     public static String assembleKey(String businessType, String key) {
-        return assembleKey(UsersConstants.APP_NAME, businessType, key);
+        return assembleKey(ActivityConstants.APP_NAME, businessType, key);
     }
 
     /**

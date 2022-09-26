@@ -1,4 +1,4 @@
-package com.flying.activity.service.users;
+package com.flying.activity.service.lottery.records;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.flying.activity.service.accounts;
+package com.flying.activity.service.activity;
 
 /**
  * 账户服务
@@ -7,7 +7,7 @@ package com.flying.activity.service.accounts;
  * @date 2022-09-01 14:10
  * @since 1.0
  */
-public interface AccountsService {
+public interface ActivityService {
 
     /**
      * 注册
@@ -15,7 +15,7 @@ public interface AccountsService {
      * @param accountInfo 账户信息
      * @return 账号信息
      */
-    AccountBO register(AccountBO accountInfo);
+    ActivityBO register(ActivityBO accountInfo);
 
     /**
      * 获取账号信息（包含密码和用户信息）
@@ -23,7 +23,7 @@ public interface AccountsService {
      * @param account 账号
      * @return 账号信息
      */
-    AccountBO get(String account);
+    ActivityBO get(String account);
 
     /**
      * 根据条件要求，获取账户信息
@@ -32,6 +32,6 @@ public interface AccountsService {
      * @param hasUserInfo 是否包含用户信息，默认false
      * @return 账号信息
      */
-    AccountBO getByCondition(String account, boolean hasUserInfo);
+    ActivityBO getByCondition(String account, boolean hasUserInfo);
 
 }

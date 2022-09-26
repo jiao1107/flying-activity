@@ -15,6 +15,7 @@ public enum  ApprovalStatus {
     INITIAL(),
     RUNNING(),
     HOLDING(),
-    FINISH()
+    FINISH(),
+    REJECTED();
 
 }

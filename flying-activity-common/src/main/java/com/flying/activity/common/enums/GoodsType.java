@@ -7,8 +7,14 @@ package com.flying.activity.common.enums;
  * @date 2022-09-20 14:39
  * @since 1.0
  */
-public enum AccountType {
-
-    main,assistant;
+public enum GoodsType {
+    /**
+     * 实物
+     */
+    entity,
+    /**
+     * 虚拟
+     */
+    virtual;
 
 }

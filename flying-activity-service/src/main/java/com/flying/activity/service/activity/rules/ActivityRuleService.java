@@ -1,4 +1,4 @@
-package com.flying.activity.service.pwd;
+package com.flying.activity.service.activity.rules;
 
 /**
  * 密码服务
@@ -7,7 +7,7 @@ package com.flying.activity.service.pwd;
  * @date 2022-09-21 14:20
  * @since 1.0
  */
-public interface PwdService {
+public interface ActivityRuleService {
 
     /**
      * 保存密码
@@ -15,7 +15,7 @@ public interface PwdService {
      * @param pwd 密码信息
      * @return 保存条数
      */
-    int createPwd(PwdBO pwd);
+    int createPwd(ActivityRuleBO pwd);
 
     /**
      * 修改密码

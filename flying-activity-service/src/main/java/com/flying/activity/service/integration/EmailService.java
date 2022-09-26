@@ -1,6 +1,6 @@
 package com.flying.activity.service.integration;
 
-import com.flying.activity.service.users.UserRegisterEvent;
+import com.flying.activity.service.lottery.records.UserRegisterEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationListener;
