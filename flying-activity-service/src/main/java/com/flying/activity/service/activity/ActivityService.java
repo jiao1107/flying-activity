@@ -1,5 +1,7 @@
 package com.flying.activity.service.activity;
 
+import java.util.List;
+
 /**
  * 账户服务
  *
@@ -10,28 +12,27 @@ package com.flying.activity.service.activity;
 public interface ActivityService {
 
     /**
-     * 注册
+     * 新增活动
      *
-     * @param accountInfo 账户信息
-     * @return 账号信息
+     * @param activity 活动信息
+     * @return 新增成功条数
      */
-    ActivityBO register(ActivityBO accountInfo);
+    int create(ActivityBO activity);
 
     /**
-     * 获取账号信息（包含密码和用户信息）
+     * 获取活动信息
      *
-     * @param account 账号
-     * @return 账号信息
+     * @param id id
+     * @return 活动信息
      */
-    ActivityBO get(String account);
+    ActivityBO get(Long id);
 
     /**
-     * 根据条件要求，获取账户信息
+     * 获取活动集合
      *
-     * @param account     账号
-     * @param hasUserInfo 是否包含用户信息，默认false
-     * @return 账号信息
+     * @param query 检索条件
+     * @return 活动集合
      */
-    ActivityBO getByCondition(String account, boolean hasUserInfo);
+    List<ActivityBO> list(ActivityBO query);
 
 }

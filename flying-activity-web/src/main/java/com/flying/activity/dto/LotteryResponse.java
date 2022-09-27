@@ -12,10 +12,19 @@ import lombok.Data;
 @Data
 public class LotteryResponse {
 
+    /**
+     * 物品id
+     */
     private Long id;
 
+    /**
+     * 物品编码
+     */
     private String goodsCode;
 
+    /**
+     * 物品名称
+     */
     private String goodsName;
 
 }

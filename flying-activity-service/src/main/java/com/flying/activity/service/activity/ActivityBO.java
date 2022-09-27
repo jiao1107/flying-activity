@@ -8,11 +8,11 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- * 账户信息BO
+ * 活动业务类
  *
  * @author Feixiang.Jiao
  * @date 2022-09-13 16:03
- * @since
+ * @since 1.0
  */
 @Data
 public class ActivityBO {
@@ -56,5 +56,9 @@ public class ActivityBO {
      * 创建人
      */
     private String creator;
+
+    public ActivityBO() {
+
+    }
 
 }

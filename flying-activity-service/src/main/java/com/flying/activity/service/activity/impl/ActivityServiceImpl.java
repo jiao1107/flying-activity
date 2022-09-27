@@ -2,8 +2,9 @@ package com.flying.activity.service.activity.impl;
 
 import com.flying.activity.service.activity.ActivityBO;
 import com.flying.activity.service.activity.ActivityService;
-import org.springframework.retry.annotation.Retryable;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * 账号服务实现类
@@ -13,28 +14,21 @@ import org.springframework.stereotype.Service;
  * @since 1.0
  */
 @Service
-public class AccountsServiceImpl implements ActivityService {
+public class ActivityServiceImpl implements ActivityService {
 
 
-    @Retryable
-    public void create() {
-
+    @Override
+    public int create(ActivityBO activity) {
+        return 0;
     }
 
     @Override
-    public ActivityBO register(ActivityBO accountInfo) {
-
+    public ActivityBO get(Long id) {
         return null;
     }
 
     @Override
-    public ActivityBO get(String account) {
+    public List<ActivityBO> list(ActivityBO query) {
         return null;
     }
-
-    @Override
-    public ActivityBO getByCondition(String account, boolean hasUserInfo) {
-        return null;
-    }
-
 }
