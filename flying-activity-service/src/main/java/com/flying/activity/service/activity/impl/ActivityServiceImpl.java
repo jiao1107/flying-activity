@@ -1,7 +1,7 @@
 package com.flying.activity.service.activity.impl;
 
 import com.flying.activity.service.activity.ActivityBO;
-import com.flying.activity.service.activity.ActivityService;
+import com.flying.activity.service.activity.IActivityService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.List;
  * @since 1.0
  */
 @Service
-public class ActivityServiceImpl implements ActivityService {
+public class ActivityServiceImpl implements IActivityService {
 
 
     @Override
@@ -29,6 +29,11 @@ public class ActivityServiceImpl implements ActivityService {
 
     @Override
     public List<ActivityBO> list(ActivityBO query) {
+        return null;
+    }
+
+    @Override
+    public ActivityBO getAndCheck(Long id) {
         return null;
     }
 }

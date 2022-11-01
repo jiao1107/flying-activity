@@ -1,5 +1,6 @@
 package com.flying.activity.controller;
 
+import com.flying.common.constants.DataResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,4 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/activity")
 public class ActivityController {
+
+    public DataResult<Long> create() {
+
+        return DataResult.success();
+    }
+
 }

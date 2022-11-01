@@ -19,6 +19,7 @@
     <properties>
         <hutool-all.version>5.3.2</hutool-all.version>
         <flying-common.version>1.0.0-SNAPSHOT</flying-common.version>
+        <alibaba-fastjson.version>1.2.83</alibaba-fastjson.version>
     </properties>
 
     <modules>
@@ -41,6 +42,11 @@
                 <groupId>com.flying.common</groupId>
                 <artifactId>flying-common</artifactId>
                 <version>${flying-common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${alibaba-fastjson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

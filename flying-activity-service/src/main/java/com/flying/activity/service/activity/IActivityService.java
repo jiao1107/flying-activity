@@ -9,7 +9,7 @@ import java.util.List;
  * @date 2022-09-01 14:10
  * @since 1.0
  */
-public interface ActivityService {
+public interface IActivityService {
 
     /**
      * 新增活动
@@ -34,5 +34,13 @@ public interface ActivityService {
      * @return 活动集合
      */
     List<ActivityBO> list(ActivityBO query);
+
+    /**
+     * 获取活动信息，并且校验活动是否正常开启，活动是否进行中等基本属性
+     *
+     * @param id 活动id
+     * @return 活动信息
+     */
+    ActivityBO getAndCheck(Long id);
 
 }
